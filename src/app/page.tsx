@@ -54,6 +54,20 @@ const featuredProjects: FeaturedProject[] = [
     stack: ["Java", "Swing", "SQLite", "OOP", "PDF Reports"],
     href: "https://github.com/AbdelrahmanMohamed7/Enterprise-Payroll-System-Public",
     highlight: "Business system",
+    screenshots: [
+      {
+        src: "/projects/enterprise-payroll/salary-update.png",
+        alt: "Enterprise Payroll System salary update screen",
+      },
+      {
+        src: "/projects/enterprise-payroll/employee-record.png",
+        alt: "Enterprise Payroll System employee record management screen",
+      },
+      {
+        src: "/projects/enterprise-payroll/salary-slip.png",
+        alt: "Enterprise Payroll System salary slip generation screen",
+      },
+    ],
   },
   {
     name: "Medical Records Access Platform",
@@ -172,6 +186,14 @@ export default function Home() {
               >
                 View Projects
                 <ArrowUpRight size={18} />
+              </a>
+              <a
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-black/15 bg-white px-5 text-sm font-semibold text-black transition hover:border-black/30 hover:bg-[#fffaf0]"
+                href="/resume/abdelrahman-mohamed-resume.pdf"
+                target="_blank"
+              >
+                <ExternalLink size={18} />
+                Resume
               </a>
               <a
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-black/15 bg-white px-5 text-sm font-semibold text-black transition hover:border-black/30 hover:bg-[#fffaf0]"
@@ -389,6 +411,14 @@ export default function Home() {
               >
                 <Mail size={18} />
                 Email
+              </a>
+              <a
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/20 px-5 text-sm font-semibold text-white transition hover:bg-white/10"
+                href="/resume/abdelrahman-mohamed-resume.pdf"
+                target="_blank"
+              >
+                <ExternalLink size={18} />
+                Resume
               </a>
               <a
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/20 px-5 text-sm font-semibold text-white transition hover:bg-white/10"
