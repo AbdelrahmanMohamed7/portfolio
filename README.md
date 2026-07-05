@@ -63,3 +63,4 @@ npm run build
 
 - GitHub: [AbdelrahmanMohamed7](https://github.com/AbdelrahmanMohamed7)
 - LinkedIn: [abdelrahman-mohamed-85a61522a](https://www.linkedin.com/in/abdelrahman-mohamed-85a61522a/)
+- Email: [bodabanzen1818@gmail.com](mailto:bodabanzen1818@gmail.com)

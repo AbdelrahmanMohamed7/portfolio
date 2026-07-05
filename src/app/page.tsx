@@ -340,7 +340,7 @@ export default function Home() {
             <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
               <a
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-md bg-white px-5 text-sm font-semibold text-[#151515] transition hover:bg-[#f7f5ef]"
-                href="mailto:your-email@example.com"
+                href="mailto:bodabanzen1818@gmail.com"
               >
                 <Mail size={18} />
                 Email
