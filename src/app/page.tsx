@@ -11,7 +11,16 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-const featuredProjects = [
+type FeaturedProject = {
+  name: string;
+  summary: string;
+  stack: string[];
+  href: string;
+  highlight: string;
+  screenshots?: { src: string; alt: string }[];
+};
+
+const featuredProjects: FeaturedProject[] = [
   {
     name: "Restaurant Canteen App",
     summary:
@@ -19,6 +28,24 @@ const featuredProjects = [
     stack: ["Flutter", "Dart", "Firebase", "Firestore", "Google Maps", "GetX"],
     href: "https://github.com/AbdelrahmanMohamed7/restaurant-canteen-app",
     highlight: "Mobile app",
+    screenshots: [
+      {
+        src: "/projects/restaurant-canteen/home.png",
+        alt: "Restaurant Canteen App food court home screen",
+      },
+      {
+        src: "/projects/restaurant-canteen/categories.png",
+        alt: "Restaurant Canteen App category browsing screen",
+      },
+      {
+        src: "/projects/restaurant-canteen/orders.png",
+        alt: "Restaurant Canteen App order history screen",
+      },
+      {
+        src: "/projects/restaurant-canteen/cart.png",
+        alt: "Restaurant Canteen App cart checkout screen",
+      },
+    ],
   },
   {
     name: "Enterprise Payroll System",
@@ -248,6 +275,24 @@ export default function Home() {
                 </a>
               </div>
               <p className="mt-4 leading-7 text-black/66">{project.summary}</p>
+              {project.screenshots && project.screenshots.length > 0 ? (
+                <div className="mt-5 grid grid-cols-2 gap-2 rounded-md bg-[#f7f5ef] p-2 sm:grid-cols-4">
+                  {project.screenshots.map((screenshot) => (
+                    <div
+                      className="relative aspect-[9/16] overflow-hidden rounded-sm border border-black/10 bg-black/5"
+                      key={screenshot.src}
+                    >
+                      <Image
+                        alt={screenshot.alt}
+                        className="object-cover"
+                        fill
+                        sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 130px"
+                        src={screenshot.src}
+                      />
+                    </div>
+                  ))}
+                </div>
+              ) : null}
               <div className="mt-5 flex flex-wrap gap-2">
                 {project.stack.map((item) => (
                   <span
