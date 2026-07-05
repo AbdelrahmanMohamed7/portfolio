@@ -18,6 +18,7 @@ type FeaturedProject = {
   href: string;
   highlight: string;
   screenshots?: { src: string; alt: string }[];
+  screenshotLayout?: "phone" | "wide";
 };
 
 const featuredProjects: FeaturedProject[] = [
@@ -54,6 +55,7 @@ const featuredProjects: FeaturedProject[] = [
     stack: ["Java", "Swing", "SQLite", "OOP", "PDF Reports"],
     href: "https://github.com/AbdelrahmanMohamed7/Enterprise-Payroll-System-Public",
     highlight: "Business system",
+    screenshotLayout: "wide",
     screenshots: [
       {
         src: "/projects/enterprise-payroll/salary-update.png",
@@ -84,6 +86,33 @@ const featuredProjects: FeaturedProject[] = [
     stack: ["C++", "Algorithms", "Data Structures", "File Handling"],
     href: "https://github.com/AbdelrahmanMohamed7/global-university-ranking-engine",
     highlight: "Algorithms",
+    screenshotLayout: "wide",
+    screenshots: [
+      {
+        src: "/projects/global-university/user-options.png",
+        alt: "Global University Ranking Engine normal user options menu",
+      },
+      {
+        src: "/projects/global-university/university-list.png",
+        alt: "Global University Ranking Engine ranked university list output",
+      },
+      {
+        src: "/projects/global-university/search-benchmark.png",
+        alt: "Global University Ranking Engine university search with benchmark results",
+      },
+      {
+        src: "/projects/global-university/university-details.png",
+        alt: "Global University Ranking Engine detailed university metrics output",
+      },
+      {
+        src: "/projects/global-university/admin-feedback.png",
+        alt: "Global University Ranking Engine admin feedback review screen",
+      },
+      {
+        src: "/projects/global-university/admin-report.png",
+        alt: "Global University Ranking Engine admin top university report output",
+      },
+    ],
   },
   {
     name: "Airport Concurrency Simulation",
@@ -298,17 +327,31 @@ export default function Home() {
               </div>
               <p className="mt-4 leading-7 text-black/66">{project.summary}</p>
               {project.screenshots && project.screenshots.length > 0 ? (
-                <div className="mt-5 grid grid-cols-2 gap-2 rounded-md bg-[#f7f5ef] p-2 sm:grid-cols-4">
+                <div
+                  className={
+                    project.screenshotLayout === "wide"
+                      ? "mt-5 grid grid-cols-1 gap-2 rounded-md bg-[#f7f5ef] p-2 sm:grid-cols-2"
+                      : "mt-5 grid grid-cols-2 gap-2 rounded-md bg-[#f7f5ef] p-2 sm:grid-cols-4"
+                  }
+                >
                   {project.screenshots.map((screenshot) => (
                     <div
-                      className="relative aspect-[9/16] overflow-hidden rounded-sm border border-black/10 bg-black/5"
+                      className={
+                        project.screenshotLayout === "wide"
+                          ? "relative aspect-video overflow-hidden rounded-sm border border-black/10 bg-black/5"
+                          : "relative aspect-[9/16] overflow-hidden rounded-sm border border-black/10 bg-black/5"
+                      }
                       key={screenshot.src}
                     >
                       <Image
                         alt={screenshot.alt}
                         className="object-cover"
                         fill
-                        sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 130px"
+                        sizes={
+                          project.screenshotLayout === "wide"
+                            ? "(max-width: 768px) 90vw, 260px"
+                            : "(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 130px"
+                        }
                         src={screenshot.src}
                       />
                     </div>
