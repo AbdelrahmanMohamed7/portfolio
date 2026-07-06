@@ -85,6 +85,21 @@ const featuredProjects: FeaturedProject[] = [
     stack: ["Vue", "Express.js", "Redis", "Docker", "Access Control"],
     href: "https://github.com/AbdelrahmanMohamed7/medical-blockchain-project",
     highlight: "Full stack",
+    screenshotLayout: "wide",
+    screenshots: [
+      {
+        src: "/projects/medical-records/role-panels.png",
+        alt: "Medical Records Access Platform role-based panels",
+      },
+      {
+        src: "/projects/medical-records/token-login.png",
+        alt: "Medical Records Access Platform token login screens",
+      },
+      {
+        src: "/projects/medical-records/access-workflows.png",
+        alt: "Medical Records Access Platform document and access workflows",
+      },
+    ],
   },
   {
     name: "Global University Ranking Engine",
