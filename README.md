@@ -29,7 +29,7 @@ This portfolio presents selected projects, technical skills, and contact links f
 - Medical Records Access Platform
 - Global University Ranking Engine
 - Airport Concurrency Simulation
-- Little Lemon Restaurant
+- Procedural 2D Console Physics Engine
 
 ## Getting Started
 

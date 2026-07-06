@@ -143,14 +143,36 @@ const featuredProjects: FeaturedProject[] = [
     stack: ["Java", "Maven", "Concurrency", "Synchronization"],
     href: "https://github.com/AbdelrahmanMohamed7/Airport-Concurrency-Simulation",
     highlight: "Concurrency",
+    screenshotLayout: "wide",
+    screenshots: [
+      {
+        src: "/projects/airport-concurrency/landing-flow.png",
+        alt: "Airport Concurrency Simulation landing and gate synchronization log",
+      },
+      {
+        src: "/projects/airport-concurrency/statistics.png",
+        alt: "Airport Concurrency Simulation completion statistics log",
+      },
+    ],
   },
   {
-    name: "Little Lemon Restaurant",
+    name: "Procedural 2D Console Physics Engine",
     summary:
-      "Responsive React restaurant website with navigation, table reservation flow, form validation, and modern UI styling.",
-    stack: ["React", "JavaScript", "HTML", "CSS", "Responsive UI"],
-    href: "https://github.com/AbdelrahmanMohamed7/Little-Lemon-Restaurant",
-    highlight: "Frontend",
+      "C-based console physics project with a configurable game loop, score view, ASCII playfield rendering, and procedural motion behavior.",
+    stack: ["C", "Console UI", "2D Physics", "Simulation", "Procedural Programming"],
+    href: "https://github.com/AbdelrahmanMohamed7/Procedural-2D-Physics-Engine",
+    highlight: "Systems project",
+    screenshotLayout: "wide",
+    screenshots: [
+      {
+        src: "/projects/procedural-physics/menu.png",
+        alt: "Procedural 2D Console Physics Engine menu screen",
+      },
+      {
+        src: "/projects/procedural-physics/gameplay.png",
+        alt: "Procedural 2D Console Physics Engine ASCII gameplay screen",
+      },
+    ],
   },
 ];
 
