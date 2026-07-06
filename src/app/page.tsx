@@ -137,21 +137,37 @@ const featuredProjects: FeaturedProject[] = [
     ],
   },
   {
-    name: "Airport Concurrency Simulation",
+    name: "Car Rental Fleet Tracking System",
     summary:
-      "Java multi-threaded simulation engine for runway scheduling, gate allocation, and safe concurrent flight operations.",
-    stack: ["Java", "Maven", "Concurrency", "Synchronization"],
-    href: "https://github.com/AbdelrahmanMohamed7/Airport-Concurrency-Simulation",
-    highlight: "Concurrency",
+      "Java desktop fleet management system for car registration, customer records, rental availability, returns, due dates, and fine tracking.",
+    stack: ["Java", "Swing", "Desktop App", "CRUD", "Fleet Management"],
+    href: "https://github.com/AbdelrahmanMohamed7/Car-Rental-Fleet-Tracking-System",
+    highlight: "Desktop system",
     screenshotLayout: "wide",
     screenshots: [
       {
-        src: "/projects/airport-concurrency/landing-flow.png",
-        alt: "Airport Concurrency Simulation landing and gate synchronization log",
+        src: "/projects/car-rental-fleet/login-registration.png",
+        alt: "Car Rental Fleet Tracking login and registration workflow",
       },
       {
-        src: "/projects/airport-concurrency/statistics.png",
-        alt: "Airport Concurrency Simulation completion statistics log",
+        src: "/projects/car-rental-fleet/car-register.png",
+        alt: "Car Rental Fleet Tracking car registration screen",
+      },
+      {
+        src: "/projects/car-rental-fleet/customer-saved.png",
+        alt: "Car Rental Fleet Tracking customer record saved screen",
+      },
+      {
+        src: "/projects/car-rental-fleet/rental-available.png",
+        alt: "Car Rental Fleet Tracking rental screen for available car",
+      },
+      {
+        src: "/projects/car-rental-fleet/rental-unavailable.png",
+        alt: "Car Rental Fleet Tracking rental screen for unavailable car",
+      },
+      {
+        src: "/projects/car-rental-fleet/return-car.png",
+        alt: "Car Rental Fleet Tracking return car and fine tracking screen",
       },
     ],
   },
@@ -376,11 +392,16 @@ export default function Home() {
                       : "mt-5 grid grid-cols-2 gap-2 bg-[#f4efe5] p-2 sm:grid-cols-4"
                   }
                 >
-                  {project.screenshots.map((screenshot) => (
+                  {project.screenshots.map((screenshot, index) => (
                     <div
                       className={
                         project.screenshotLayout === "wide"
-                          ? "relative aspect-video overflow-hidden border border-black/10 bg-black/5"
+                          ? [
+                              "relative aspect-video overflow-hidden border border-black/10 bg-black/5",
+                              project.screenshots?.length === 3 && index === 0
+                                ? "sm:col-span-2"
+                                : "",
+                            ].join(" ")
                           : "relative aspect-[9/16] overflow-hidden border border-black/10 bg-black/5"
                       }
                       key={screenshot.src}

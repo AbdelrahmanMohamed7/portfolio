@@ -28,7 +28,7 @@ This portfolio presents selected projects, technical skills, and contact links f
 - Enterprise Payroll System
 - Medical Records Access Platform
 - Global University Ranking Engine
-- Airport Concurrency Simulation
+- Car Rental Fleet Tracking System
 - Procedural 2D Console Physics Engine
 
 ## Getting Started
