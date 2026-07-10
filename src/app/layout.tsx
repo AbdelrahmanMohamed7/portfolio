@@ -4,9 +4,27 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  title: "Abdelrahman Mohamed | Software Developer",
+  title: {
+    default: "Abdelrahman Mohamed | Frontend & Full-Stack Developer",
+    template: "%s | Abdelrahman Mohamed",
+  },
   description:
-    "Professional portfolio for Abdelrahman Mohamed, a Software Developer and Full-Stack Developer building mobile, web, backend, and data-driven projects.",
+    "Portfolio of Abdelrahman Mohamed, a frontend and full-stack developer building polished, accessible web experiences with reliable, maintainable engineering.",
+  applicationName: "Abdelrahman Mohamed Portfolio",
+  authors: [{ name: "Abdelrahman Mohamed" }],
+  creator: "Abdelrahman Mohamed",
+  openGraph: {
+    type: "website",
+    title: "Abdelrahman Mohamed | Frontend & Full-Stack Developer",
+    description:
+      "Polished, accessible web experiences backed by reliable, maintainable engineering.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Abdelrahman Mohamed | Frontend & Full-Stack Developer",
+    description:
+      "Polished, accessible web experiences backed by reliable, maintainable engineering.",
+  },
 };
 
 export default function RootLayout({

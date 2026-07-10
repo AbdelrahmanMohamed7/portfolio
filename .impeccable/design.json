@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-10T16:03:17Z",
+  "title": "Design System: Abdelrahman Mohamed Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "soft-chalk": { "role": "neutral", "displayName": "Soft Chalk", "canonical": "#f4efe5", "tonalRamp": ["oklch(15% 0.015 85)", "oklch(27% 0.015 85)", "oklch(39% 0.015 85)", "oklch(51% 0.015 85)", "oklch(63% 0.015 85)", "oklch(75% 0.015 85)", "oklch(87% 0.015 85)", "oklch(95% 0.015 85)"] },
+      "structural-ink": { "role": "neutral", "displayName": "Structural Ink", "canonical": "#151412", "tonalRamp": ["oklch(15% 0.005 85)", "oklch(27% 0.005 85)", "oklch(39% 0.005 85)", "oklch(51% 0.005 85)", "oklch(63% 0.005 85)", "oklch(75% 0.005 85)", "oklch(87% 0.005 85)", "oklch(95% 0.005 85)"] },
+      "measured-teal": { "role": "primary", "displayName": "Measured Teal", "canonical": "#0f766e", "tonalRamp": ["oklch(15% 0.08 190)", "oklch(27% 0.08 190)", "oklch(39% 0.08 190)", "oklch(51% 0.08 190)", "oklch(63% 0.08 190)", "oklch(75% 0.08 190)", "oklch(87% 0.08 190)", "oklch(95% 0.08 190)"] },
+      "evidence-amber": { "role": "secondary", "displayName": "Evidence Amber", "canonical": "#d9a441", "tonalRamp": ["oklch(15% 0.1 80)", "oklch(27% 0.1 80)", "oklch(39% 0.1 80)", "oklch(51% 0.1 80)", "oklch(63% 0.1 80)", "oklch(75% 0.1 80)", "oklch(87% 0.1 80)", "oklch(95% 0.1 80)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero statement only." },
+      "headline": { "displayName": "Headline", "purpose": "Major section headings." },
+      "title": { "displayName": "Title", "purpose": "Project and skill-group names." },
+      "body": { "displayName": "Body", "purpose": "Descriptions and narrative copy." },
+      "label": { "displayName": "Label", "purpose": "Navigation, tags, and short category labels." }
+    },
+    "shadows": [
+      { "name": "quiet-rest", "value": "0 1px 2px 0 rgb(0 0 0 / 0.05)", "purpose": "Resting controls and project surfaces." },
+      { "name": "responsive-lift", "value": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)", "purpose": "Button hover feedback." },
+      { "name": "feature-lift", "value": "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)", "purpose": "Current profile, contact, and project hover treatment; flagged for refinement." }
+    ],
+    "motion": [
+      { "name": "state-transition", "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Tailwind default transition for color, shadow, and transform feedback." },
+      { "name": "project-transition", "value": "300ms cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Current project-card hover transition." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Measured Teal pill action used for the hero's primary path.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#projects\">View my work <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-btn-primary{display:inline-flex;height:48px;align-items:center;justify-content:center;gap:8px;border-radius:9999px;background:#0f766e;color:#fff;padding:0 24px;font:700 14px/1 ui-sans-serif,system-ui,sans-serif;text-decoration:none;transition:background-color 150ms,transform 150ms,box-shadow 150ms}.ds-btn-primary:hover{background:#115e59;transform:translateY(-2px)}.ds-btn-primary:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 5px #0f766e}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "White pill action with a restrained neutral border.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">Download résumé <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-btn-secondary{display:inline-flex;height:48px;align-items:center;justify-content:center;gap:8px;border:1px solid rgb(0 0 0/.15);border-radius:9999px;background:#fff;color:#151412;padding:0 24px;font:700 14px/1 ui-sans-serif,system-ui,sans-serif;text-decoration:none;transition:background-color 150ms,border-color 150ms,transform 150ms}.ds-btn-secondary:hover{background:#fffaf0;border-color:rgb(0 0 0/.3);transform:translateY(-2px)}.ds-btn-secondary:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 5px #0f766e}"
+    },
+    {
+      "name": "Technology Chip",
+      "kind": "chip",
+      "refersTo": "technology-chip",
+      "description": "Compact technology label for project stacks.",
+      "html": "<span class=\"ds-chip\">TypeScript</span>",
+      "css": ".ds-chip{display:inline-flex;border-radius:9999px;background:#eef3f1;color:#16423c;padding:6px 12px;font:600 14px/1.25 ui-sans-serif,system-ui,sans-serif}.ds-chip:hover{background:#e1eee9}.ds-chip:focus-visible{outline:3px solid #fff;outline-offset:2px;box-shadow:0 0 0 5px #0f766e}"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "Square evidence surface containing a project title, summary, screenshots, and stack.",
+      "html": "<article class=\"ds-project-card\"><p class=\"ds-project-label\">Full stack</p><h3>Medical Records Access Platform</h3><p>Secure record authorization workflows with role-based access.</p><a href=\"#\">Open repository ↗</a></article>",
+      "css": ".ds-project-card{border:1px solid rgb(0 0 0/.1);background:#fff;color:#151412;padding:24px;font-family:ui-sans-serif,system-ui,sans-serif;transition:border-color 300ms,transform 300ms}.ds-project-card h3{margin:8px 0 0;font-size:24px;line-height:1.25;font-weight:900}.ds-project-card p{line-height:1.75}.ds-project-card a{color:#0f766e;font-weight:700}.ds-project-label{margin:0;color:#87651f;font-size:14px;font-weight:700}.ds-project-card:hover{border-color:rgb(15 118 110/.35)}.ds-project-card:focus-within{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 5px #0f766e}"
+    },
+    {
+      "name": "Desktop Navigation",
+      "kind": "nav",
+      "description": "Pill-contained section links on the Soft Chalk header.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Portfolio\"><a href=\"#projects\">Projects</a><a href=\"#skills\">Skills</a><a href=\"#about\">About</a><a href=\"#contact\">Contact</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:4px;font:600 14px/1 ui-sans-serif,system-ui,sans-serif}.ds-nav a{border-radius:9999px;color:#151412;padding:12px 16px;text-decoration:none;transition:background-color 150ms,color 150ms}.ds-nav a:hover{background:#151412;color:#fff}.ds-nav a:focus-visible{outline:3px solid #fff;outline-offset:2px;box-shadow:0 0 0 5px #0f766e}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Engineer's Workbench",
+    "overview": "The current interface resembles a well-kept workbench: practical artifacts are placed in view, labels make them easy to inspect, and structure takes priority over decoration. Soft Chalk supports long-form browsing while Structural Ink creates decisive dark bands; Measured Teal handles action and Evidence Amber highlights technical signals. The system is practical and approachable, with a hybrid depth model: sections stay flat and structural while interactive controls and project surfaces lift lightly in response.",
+    "keyCharacteristics": ["Evidence-forward project imagery and repository access.", "Warm neutral canvases contrasted with near-black structural sections.", "Teal actions, amber signals, square content surfaces, and pill controls.", "Compact mobile-first spacing inside a centered max-width frame.", "Restrained translation and shadow changes on hover."],
+    "rules": [
+      { "name": "Evidence Before Ornament", "body": "Screenshots and technical decisions must command more attention than decorative treatments.", "section": "overview" },
+      { "name": "Two-Signal", "body": "Measured Teal communicates action; Evidence Amber communicates supporting evidence. Never use both as competing calls to action in the same cluster.", "section": "colors" },
+      { "name": "Zero-Shift Type", "body": "Use the documented system stack unless a future named typeface is bundled locally with verified fallback metrics.", "section": "typography" },
+      { "name": "Flat-Until-Useful", "body": "Surfaces remain flat unless elevation clarifies interactivity or hierarchy.", "section": "elevation" }
+    ],
+    "dos": ["Do make completed projects, screenshots, repositories, source quality, and explainable technical decisions the primary proof.", "Do structure every project as a concise case study covering the problem, role, technical approach, challenge, and result.", "Do use direct CTA wording: View my work, Download résumé, and Contact me.", "Do verify every opacity-based text color against its actual background at WCAG 2.2 AA.", "Do provide complete keyboard access, strong focus-visible treatment, semantic structure, descriptive labels, large touch targets, and reduced-motion alternatives."],
+    "donts": ["Don't make the portfolio resemble a generic portfolio template or an AI-generated landing page.", "Don't use excessive purple or blue gradients, glowing backgrounds, or pervasive glassmorphism.", "Don't create too many rounded cards or cards nested inside cards.", "Don't create oversized empty hero sections, skill-percentage bars, decorative technology-logo clouds, typewriter effects, or excessive animation.", "Don't use vague claims, copied startup-style language, invented outcomes, invented metrics, testimonials, client logos, or business results.", "Don't depend on hover, animation, or color alone to reveal meaning or access an interaction."]
+  }
+}
