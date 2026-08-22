@@ -5,25 +5,25 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Abdelrahman Mohamed | Frontend & Full-Stack Developer",
+    default: "Abdelrahman Mohamed | Full-Stack Software Developer",
     template: "%s | Abdelrahman Mohamed",
   },
   description:
-    "Portfolio of Abdelrahman Mohamed, a frontend and full-stack developer building polished, accessible web experiences with reliable, maintainable engineering.",
+    "Portfolio of Abdelrahman Mohamed, a Full-Stack Software Developer who turns ideas into polished, user-friendly products.",
   applicationName: "Abdelrahman Mohamed Portfolio",
   authors: [{ name: "Abdelrahman Mohamed" }],
   creator: "Abdelrahman Mohamed",
   openGraph: {
     type: "website",
-    title: "Abdelrahman Mohamed | Frontend & Full-Stack Developer",
+    title: "Abdelrahman Mohamed | Full-Stack Software Developer",
     description:
-      "Polished, accessible web experiences backed by reliable, maintainable engineering.",
+      "Polished, user-friendly products backed by clean, maintainable engineering.",
   },
   twitter: {
     card: "summary",
-    title: "Abdelrahman Mohamed | Frontend & Full-Stack Developer",
+    title: "Abdelrahman Mohamed | Full-Stack Software Developer",
     description:
-      "Polished, accessible web experiences backed by reliable, maintainable engineering.",
+      "Polished, user-friendly products backed by clean, maintainable engineering.",
   },
 };
 

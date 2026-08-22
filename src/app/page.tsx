@@ -56,7 +56,7 @@ export default function Home() {
             >
               <span>Abdelrahman Mohamed</span>
               <span className="text-[0.72rem] font-semibold tracking-[0.14em] text-[#59554d]">
-                Full-stack developer
+                Full-Stack Software Developer
               </span>
             </a>
             <div className="hidden items-center gap-1 text-sm font-semibold md:flex">
@@ -96,16 +96,13 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
           <div>
             <p className="text-base font-bold text-[#0f766e]">
-              Full-stack developer
+              Full-Stack Software Developer
             </p>
             <h1 className="mt-4 max-w-4xl text-balance text-5xl font-black leading-[1.02] text-[#151412] sm:text-6xl lg:text-7xl">
-              I build polished, accessible web experiences with reliable,
-              maintainable engineering.
+              I turn ideas into polished, user-friendly products.
             </h1>
             <p className="mt-6 max-w-2xl text-pretty text-lg leading-8 text-[#45423c]">
-              I build frontend interfaces, full-stack workflows, mobile
-              applications, desktop systems, and data-driven software with a
-              focus on clarity, structure, and maintainability.
+              Full-stack software backed by clean, maintainable engineering.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
@@ -130,16 +127,17 @@ export default function Home() {
           <aside className="border-y border-black/20 py-6 lg:border-y-0 lg:border-l lg:py-2 lg:pl-8">
               <div className="flex items-center gap-4">
                 <Image
-                alt="Abdelrahman Mohamed GitHub profile"
-                className="h-20 w-20 rounded-sm border border-black/15 object-cover"
-                height={80}
-                src="https://avatars.githubusercontent.com/u/96038001?v=4"
-                width={80}
-              />
+                  alt="Illustrated portrait of Abdelrahman Mohamed"
+                  className="h-20 w-20 rounded-sm border border-black/15 object-cover"
+                  height={80}
+                  priority
+                  src="/images/abdelrahman-illustrated-avatar.jpg"
+                  width={80}
+                />
               <div>
                 <p className="text-xl font-semibold">Abdelrahman Mohamed</p>
                 <p className="mt-1 text-sm font-semibold text-[#59554d]">
-                  Full-stack developer
+                  Full-Stack Software Developer
                 </p>
                 <p className="mt-1 flex items-center gap-2 text-sm text-[#59554d]">
                   <MapPin aria-hidden="true" size={15} />
@@ -148,9 +146,8 @@ export default function Home() {
               </div>
             </div>
             <p className="mt-6 border-t border-black/15 pt-5 text-pretty text-base leading-7 text-[#45423c]">
-              I focus on clean structure, usable interfaces, and practical
-              software that another developer can inspect, understand, and
-              extend without guessing what matters most.
+              I build practical digital products that are clear, reliable, and
+              easy to use.
             </p>
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm font-bold">
               <a
@@ -217,11 +214,9 @@ export default function Home() {
             About
           </h2>
           <p className="mx-auto mt-5 max-w-3xl text-pretty text-lg leading-8 text-[#45423c]">
-            I&apos;m a full-stack developer who enjoys turning practical ideas
-            into clear, usable software. My work spans web interfaces, mobile
-            apps, backend and data-driven workflows, and desktop systems, with
-            an emphasis on code that is understandable, maintainable, and easy
-            for others to explore.
+            I&apos;m a Full-Stack Software Developer building practical web,
+            mobile, backend, and desktop applications with clean, maintainable
+            code.
           </p>
         </div>
       </section>
@@ -231,12 +226,11 @@ export default function Home() {
           <div className="grid gap-8 border-y border-white/20 py-8 lg:grid-cols-[1fr_1.1fr] lg:items-end lg:gap-16 lg:py-10">
             <div>
               <h2 className="text-balance text-3xl font-black leading-tight sm:text-4xl">
-                Let&apos;s talk about frontend or full-stack opportunities.
+                Let&apos;s build something useful.
               </h2>
               <p className="mt-4 max-w-xl text-pretty leading-7 text-white/75">
-                Open to software development opportunities, collaboration, and
-                conversations around full-stack, mobile, and practical product
-                engineering.
+                Open to software development opportunities, collaborations,
+                and practical product ideas.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:justify-end">
