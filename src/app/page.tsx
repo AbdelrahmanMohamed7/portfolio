@@ -168,7 +168,8 @@ export default function Home() {
                 alt="Abdelrahman Mohamed GitHub profile"
                 className="h-20 w-20 rounded-xl border border-white/15 object-cover"
                 height={80}
-                src="https://avatars.githubusercontent.com/u/96038001?v=4"
+                priority
+                src="/avatar.png"
                 width={80}
               />
               <div>

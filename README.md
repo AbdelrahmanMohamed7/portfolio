@@ -1,66 +1,26 @@
-# Abdelrahman Mohamed Portfolio
+# Abdelrahman Mohamed — Portfolio
 
-A professional developer portfolio showcasing full-stack, mobile, and software engineering projects.
+Personal portfolio of **Abdelrahman Mohamed**, a **Full-Stack Software Developer (.NET)** based in Cairo, Egypt, specializing in **C#**, **ASP.NET Core (.NET)**, **RESTful Web APIs**, **Entity Framework Core**, **Microsoft SQL Server**, **React.js**, and **Microsoft Azure**.
 
-## Overview
-
-This portfolio presents selected projects, technical skills, and contact links for Abdelrahman Mohamed.
-
-## Tech Stack
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Lucide React
-
-## Sections
-
-- Hero introduction
-- Featured projects
-- Technical skills
-- About summary
-- Contact links
+- **Live Portfolio:** [portfolio-three-weld-1nl59zz6ir.vercel.app](https://portfolio-three-weld-1nl59zz6ir.vercel.app)
+- **Flagship Live Platform (Nusuk Community):** [nusukcodes.site](https://nusukcodes.site)
 
 ## Featured Projects
 
-- Restaurant Canteen App
-- Enterprise Payroll System
-- Medical Records Access Platform
-- Global University Ranking Engine
-- Car Rental Fleet Tracking System
-- Procedural 2D Console Physics Engine
+1. **Nusuk Community Platform ([nusukcodes.site](https://nusukcodes.site))** — Production bilingual (Arabic/English) full-stack web platform built with C#, ASP.NET Core Web API (.NET), Entity Framework Core, Microsoft SQL Server, React.js, Vite, Docker, and Microsoft Azure.
+2. **Restaurant Canteen Ordering App** — Cross-platform Flutter & Firebase mobile ordering application with real-time Cloud Firestore sync and Google Maps checkout.
+3. **Global University Ranking Engine** — C++ analytics and recommendation engine with custom sorting/searching algorithms and performance benchmarking.
+4. **Procedural 2D Console Physics Engine** — C-based real-time 2D physics simulation and ASCII console engine.
 
-## Getting Started
-
-Install dependencies:
+## Local Development
 
 ```bash
 npm install
-```
-
-Run the development server:
-
-```bash
 npm run dev
-```
-
-Open the local site:
-
-```text
-http://localhost:3000
-```
-
-## Build
-
-Create a production build:
-
-```bash
-npm run build
 ```
 
 ## Contact
 
-- GitHub: [AbdelrahmanMohamed7](https://github.com/AbdelrahmanMohamed7)
-- LinkedIn: [abdelrahman-mohamed-85a61522a](https://www.linkedin.com/in/abdelrahman-mohamed-85a61522a/)
-- Email: [bodabanzen1818@gmail.com](mailto:bodabanzen1818@gmail.com)
+- **GitHub:** [AbdelrahmanMohamed7](https://github.com/AbdelrahmanMohamed7)
+- **LinkedIn:** [abdelrahman-mohamed-85a61522a](https://www.linkedin.com/in/abdelrahman-mohamed-85a61522a/)
+- **Email:** [bodabanzen1818@gmail.com](mailto:bodabanzen1818@gmail.com)
