@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4efe5;
-  --foreground: #151412;
-  --focus: #0f766e;
+  --background: #131b2e;
+  --foreground: #f1f5f9;
+  --focus: #14b8a6;
 }
 
 @theme inline {
@@ -26,8 +26,8 @@ html {
 }
 
 ::selection {
-  background: #0f766e;
-  color: #ffffff;
+  background: #14b8a6;
+  color: #0f172a;
 }
 
 a,
@@ -38,7 +38,7 @@ button {
 a:focus-visible,
 button:focus-visible,
 .focus-ring:focus-visible {
-  outline: 3px solid #ffffff;
+  outline: 3px solid #0f172a;
   outline-offset: 3px;
   box-shadow: 0 0 0 5px var(--focus);
 }
@@ -63,8 +63,8 @@ p {
   opacity: 0;
   pointer-events: none;
   border-radius: 9999px;
-  background: #ffffff;
-  color: #151412;
+  background: #14b8a6;
+  color: #0f172a;
   padding: 0.75rem 1rem;
   font-size: 0.875rem;
   font-weight: 700;

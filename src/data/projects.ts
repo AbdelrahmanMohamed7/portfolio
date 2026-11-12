@@ -9,23 +9,52 @@ export type Project = {
   name: string;
   summary: string;
   stack: readonly string[];
-  repositoryUrl: string;
+  liveUrl?: string;
+  repositoryUrl?: string;
   category: string;
   screenshots: readonly ProjectScreenshot[];
   featured: boolean;
   screenshotLayout: "phone" | "wide";
 };
 
-export const projects = [
+export const projects: readonly Project[] = [
+  {
+    slug: "nusuk-community",
+    name: "Nusuk Community Platform",
+    summary:
+      "Live bilingual (Arabic/English) full-stack community platform for sharing and discovering verified Nusuk Challenge invitation codes. Built with a React.js and Vite frontend on Vercel and a containerized C# ASP.NET Core RESTful Web API (.NET) + Entity Framework Core + Microsoft SQL Server backend on Microsoft Azure.",
+    stack: [
+      "C#",
+      "ASP.NET Core Web API (.NET)",
+      "Entity Framework Core",
+      "SQL Server",
+      "React.js",
+      "Vite",
+      "Docker",
+      "Microsoft Azure",
+    ],
+    liveUrl: "https://nusukcodes.site",
+    category: "Flagship Full-Stack Platform (Live Production)",
+    featured: true,
+    screenshotLayout: "wide",
+    screenshots: [
+      {
+        src: "/projects/nusuk-community/home.png",
+        alt: "Nusuk Community platform live production interface showing bilingual Arabic and English community code hub",
+        caption:
+          "Live bilingual community platform (nusukcodes.site) powered by ASP.NET Core Web API, Microsoft SQL Server, and React.js",
+      },
+    ],
+  },
   {
     slug: "restaurant-canteen",
     name: "Restaurant Canteen App",
     summary:
-      "Flutter ordering app with Firebase authentication, cart management, location-aware checkout, order tracking, and customer/manager flows.",
+      "Cross-platform Flutter ordering application with Firebase authentication, real-time Cloud Firestore menu synchronization, cart management, Google Maps location-aware checkout, order tracking, and role-based customer/manager workflows.",
     stack: ["Flutter", "Dart", "Firebase", "Firestore", "Google Maps", "GetX"],
     repositoryUrl:
       "https://github.com/AbdelrahmanMohamed7/restaurant-canteen-app",
-    category: "Mobile app",
+    category: "Cross-Platform Mobile App",
     featured: true,
     screenshotLayout: "phone",
     screenshots: [
@@ -52,72 +81,20 @@ export const projects = [
     ],
   },
   {
-    slug: "enterprise-payroll",
-    name: "Enterprise Payroll System",
-    summary:
-      "Java desktop payroll platform for employee records, salary calculations, role-based access, database storage, and PDF reporting.",
-    stack: ["Java", "Swing", "SQLite", "OOP", "PDF Reports"],
-    repositoryUrl:
-      "https://github.com/AbdelrahmanMohamed7/Enterprise-Payroll-System-Public",
-    category: "Business system",
-    featured: false,
-    screenshotLayout: "wide",
-    screenshots: [
-      {
-        src: "/projects/enterprise-payroll/salary-update.png",
-        alt: "Enterprise Payroll System salary update screen",
-        caption: "Salary update screen",
-      },
-      {
-        src: "/projects/enterprise-payroll/employee-record.png",
-        alt: "Enterprise Payroll System employee record management screen",
-        caption: "Employee record management screen",
-      },
-      {
-        src: "/projects/enterprise-payroll/salary-slip.png",
-        alt: "Enterprise Payroll System salary slip generation screen",
-        caption: "Salary slip generation screen",
-      },
-    ],
-  },
-  {
-    slug: "medical-records",
-    name: "Medical Records Access Platform",
-    summary:
-      "Vue and Express platform using Redis-backed permission mapping for secure off-chain medical record authorization workflows.",
-    stack: ["Vue", "Express.js", "Redis", "Docker", "Access Control"],
-    repositoryUrl:
-      "https://github.com/AbdelrahmanMohamed7/medical-blockchain-project",
-    category: "Full stack",
-    featured: true,
-    screenshotLayout: "wide",
-    screenshots: [
-      {
-        src: "/projects/medical-records/role-panels.png",
-        alt: "Medical Records Access Platform role-based panels",
-        caption: "Role-based panels",
-      },
-      {
-        src: "/projects/medical-records/token-login.png",
-        alt: "Medical Records Access Platform token login screens",
-        caption: "Token login screens",
-      },
-      {
-        src: "/projects/medical-records/access-workflows.png",
-        alt: "Medical Records Access Platform document and access workflows",
-        caption: "Document and access workflows",
-      },
-    ],
-  },
-  {
     slug: "global-university",
     name: "Global University Ranking Engine",
     summary:
-      "C++ analytics and recommendation engine for ranking data with searching, sorting, file handling, and performance benchmarking.",
-    stack: ["C++", "Algorithms", "Data Structures", "File Handling"],
+      "High-performance C++ analytics and recommendation engine for processing large-scale university ranking datasets with custom data structures, sorting and searching algorithms, file I/O, and execution benchmarking.",
+    stack: [
+      "C++",
+      "Data Structures",
+      "Sorting & Search Algorithms",
+      "File Handling",
+      "Benchmarking",
+    ],
     repositoryUrl:
       "https://github.com/AbdelrahmanMohamed7/global-university-ranking-engine",
-    category: "Algorithms",
+    category: "Algorithms & Data Structures",
     featured: true,
     screenshotLayout: "wide",
     screenshots: [
@@ -154,59 +131,21 @@ export const projects = [
     ],
   },
   {
-    slug: "car-rental-fleet",
-    name: "Car Rental Fleet Tracking System",
-    summary:
-      "Java desktop fleet management system for car registration, customer records, rental availability, returns, due dates, and fine tracking.",
-    stack: ["Java", "Swing", "Desktop App", "CRUD", "Fleet Management"],
-    repositoryUrl:
-      "https://github.com/AbdelrahmanMohamed7/car-rental-fleet-tracker.git",
-    category: "Desktop system",
-    featured: false,
-    screenshotLayout: "wide",
-    screenshots: [
-      {
-        src: "/projects/car-rental-fleet/login-registration.png",
-        alt: "Car Rental Fleet Tracking login and registration workflow",
-        caption: "Login and registration workflow",
-      },
-      {
-        src: "/projects/car-rental-fleet/car-register.png",
-        alt: "Car Rental Fleet Tracking car registration screen",
-        caption: "Car registration screen",
-      },
-      {
-        src: "/projects/car-rental-fleet/customer-saved.png",
-        alt: "Car Rental Fleet Tracking customer record saved screen",
-        caption: "Customer record saved screen",
-      },
-      {
-        src: "/projects/car-rental-fleet/rental-available.png",
-        alt: "Car Rental Fleet Tracking rental screen for available car",
-        caption: "Rental screen for an available car",
-      },
-      {
-        src: "/projects/car-rental-fleet/rental-unavailable.png",
-        alt: "Car Rental Fleet Tracking rental screen for unavailable car",
-        caption: "Rental screen for an unavailable car",
-      },
-      {
-        src: "/projects/car-rental-fleet/return-car.png",
-        alt: "Car Rental Fleet Tracking return car and fine tracking screen",
-        caption: "Return car and fine tracking screen",
-      },
-    ],
-  },
-  {
     slug: "procedural-physics",
     name: "Procedural 2D Console Physics Engine",
     summary:
-      "C-based console physics project with a configurable game loop, score view, ASCII playfield rendering, and procedural motion behavior.",
-    stack: ["C", "Console UI", "2D Physics", "Simulation", "Procedural Programming"],
+      "C-based real-time console physics simulation featuring a configurable game loop, collision detection, score tracking, ASCII playfield rendering, and procedural motion behavior.",
+    stack: [
+      "C",
+      "Console UI",
+      "2D Physics Simulation",
+      "Real-Time Game Loop",
+      "Procedural Programming",
+    ],
     repositoryUrl:
       "https://github.com/AbdelrahmanMohamed7/Procedural-2D-Physics-Engine",
-    category: "Systems project",
-    featured: false,
+    category: "Systems & Simulation",
+    featured: true,
     screenshotLayout: "wide",
     screenshots: [
       {
@@ -221,7 +160,7 @@ export const projects = [
       },
     ],
   },
-] as const satisfies readonly Project[];
+];
 
 export type ProjectSlug = (typeof projects)[number]["slug"];
 

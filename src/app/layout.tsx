@@ -5,25 +5,25 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Abdelrahman Mohamed | Full-Stack Software Developer",
+    default: "Abdelrahman Mohamed | Full-Stack Software Developer (.NET)",
     template: "%s | Abdelrahman Mohamed",
   },
   description:
-    "Portfolio of Abdelrahman Mohamed, a Full-Stack Software Developer who turns ideas into polished, user-friendly products.",
+    "Portfolio of Abdelrahman Mohamed, a Full-Stack Software Developer (.NET) specializing in C#, ASP.NET Core (.NET), RESTful Web APIs, SQL Server, React.js, and Microsoft Azure.",
   applicationName: "Abdelrahman Mohamed Portfolio",
   authors: [{ name: "Abdelrahman Mohamed" }],
   creator: "Abdelrahman Mohamed",
   openGraph: {
     type: "website",
-    title: "Abdelrahman Mohamed | Full-Stack Software Developer",
+    title: "Abdelrahman Mohamed | Full-Stack Software Developer (.NET)",
     description:
-      "Polished, user-friendly products backed by clean, maintainable engineering.",
+      "Full-stack web applications and cloud-ready backend systems built with C#, ASP.NET Core (.NET), SQL Server, React.js, and Microsoft Azure.",
   },
   twitter: {
     card: "summary",
-    title: "Abdelrahman Mohamed | Full-Stack Software Developer",
+    title: "Abdelrahman Mohamed | Full-Stack Software Developer (.NET)",
     description:
-      "Polished, user-friendly products backed by clean, maintainable engineering.",
+      "Full-stack web applications and cloud-ready backend systems built with C#, ASP.NET Core (.NET), SQL Server, React.js, and Microsoft Azure.",
   },
 };
 
